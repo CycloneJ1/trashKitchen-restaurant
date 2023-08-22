@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(255, 200, 98);
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav {
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+nav a {
+    padding: 0 1rem;
+}
+
+.banner {
+    border: 1px solid #666;
+    background-color: rgb(180, 153, 206);
+    padding: 1rem 0 2rem;
+    margin: 2rem;
+}
+
+#home-image {
+    max-height: 350px;
+    width: auto;
+}
