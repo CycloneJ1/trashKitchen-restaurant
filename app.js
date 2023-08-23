@@ -1,10 +1,14 @@
 const express = require("express");
 const app = express();
+const hbs = require("hbs");
+
+// ...
 
 
 app.set("views", __dirname + "/views"); //tells our Express app where to look for our views
 app.set("view engine", "hbs"); //sets HBS as the template engine
 
+hbs.registerPartials(__dirname + "/views/partials"); //tell HBS which directory we use for partials
 
 app.use(express.static('public')); // Make everything inside of public/ available
 
@@ -15,13 +19,13 @@ app.use(express.static('public')); // Make everything inside of public/ availabl
 
 // Home Page
 app.get("/", (req, res, next) => {
-    res.render('homepage');
+    res.render("homepage");
 });
 
 
 // Contact Page
 app.get("/contact", (req, res, next) => {
-    res.render('contact');
+    res.render("contact");
 })
 
 
