@@ -1,25 +1,20 @@
 <section class="product-details">
 <h1>{{title}}</h1>
 
-{{!-- <h2>Price: {{price}}</h2> --}}
-
-
-
     {{#if price}}
         <h2>Price: {{price}}</h2>
     {{else}}
         <h2>Price upon request</h2>
     {{/if}}
 
-
     <ul>
         {{#each ingredients}}
-            <li>{{this.ingredientName}}</li>
+            <li>{{this}}</li>
         {{/each}}
     </ul>
 
 
-<img src="/images/{{imageFile}}" alt="">
+    <img src="/images/{{imageFile}}" alt="">
 
   {{> ctaOrderNow title=title}}
 

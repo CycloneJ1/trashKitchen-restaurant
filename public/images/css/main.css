@@ -2,6 +2,10 @@ body {
     background-color: rgb(255, 200, 98);
     text-align: center;
 }
+.pizza-summary {
+    background-color: tomato;
+}
+
 
 nav {
     display: flex;
